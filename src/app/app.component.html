@@ -1,0 +1,26 @@
+﻿<!-- nav -->
+<!-- <nav class="nav-nav-tabs " *ngIf="currentUser"> -->
+    <!-- <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div> -->
+    <div style="padding:5px">
+    <ul class="nav-nav-tabs">
+        <li routerLinkActive="active">
+        <a  class="nav-item nav-link" routerLink="/home">Home</a>
+        </li>
+        <li li routerLinkActive="active">
+         <a  class="nav-item nav-link" routerLink="/customer">Customer</a>
+        </li>
+        <li li routerLinkActive="active">
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+            </li>
+    </ul>
+</div>
+<!-- </nav> -->
+
+<!-- main app container -->
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
